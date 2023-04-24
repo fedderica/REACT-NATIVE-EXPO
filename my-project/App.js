@@ -10,18 +10,15 @@ import { StyleSheet, Text, View, TextInput, Dimensions, Image, ImageBackground }
 
 export default function App() {
   return (
+
+ 
+
     <View style={styles.container}>
+      
       <Text style={styles.titulo}>         I'M FEDERICA   </Text>
       <Text style={styles.subTitle}>  THIS IS MY APP  </Text>
       
-     
-      <ImageBackground
-      source={{
-        uri: Asset.fromModule(require("./img/fede.png")).uri,
-      }}
-      style={styles.image}
-    >
-      </ImageBackground>
+    
 
        <TextInput
        placeholder="fedderica.bartoli@gmail.com"
@@ -68,8 +65,6 @@ image: {
   width: 900,
   height: 900,
   flex: 1,
-  resizeMode: "cover",
-  justifyContent: "center",
-   opacity: 50
+
 },
 });
